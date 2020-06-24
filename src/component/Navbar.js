@@ -7,7 +7,6 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -32,7 +31,14 @@ const Navbars = (props) => {
             </Link>
           </NavItem>
           <NavItem>
-            <NavLink to="https://github.com/ozy-ahmad">GitHub</NavLink>
+            <a
+              className="nav-link"
+              href="https://github.com/ozy-ahmad"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
           </NavItem>
           <UncontrolledDropdown nav inNavbar>
             <DropdownToggle nav caret>
