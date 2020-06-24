@@ -20,9 +20,9 @@ const Home = () => {
   const toggle = () => setTooltipOpen(!tooltipOpen);
 
   useEffect(() => {
-    const URL = "https://apiflickr.ahmadfakhrozy.com";
-    //const localUrl = "http://localhost:8080/";
-    Axios.get(URL).then((response) => {
+    const url = `${process.env.REACT_APP_API_URL}`;
+    //const localUrl = process.env.REACT_APP_LOCALHOST_URL;
+    Axios.get(url).then((response) => {
       //console.log(response);
       setData(response.data.feed.entry);
     });
